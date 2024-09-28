@@ -74,7 +74,7 @@ app.patch('/submit', (req, res) =>  {
 // get all users
 
 app.get('/users', (req, res) => {
-    const query = 'SELECT * FROM users';
+    const query = 'SELECT username, level FROM users';
     db.all(query, [], (err, rows) => {
         if (err) {
             res.status(500).json({ error: err.message });
