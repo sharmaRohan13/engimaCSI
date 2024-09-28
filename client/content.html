@@ -1,0 +1,29 @@
+<div class="container">
+    <h1 id="welcome"></h1>
+    <h3 id="level"></h3>
+
+
+    <h5 id="question"></h5>
+    <input type="text" id="answer" placeholder="Answer">
+    <button onclick="submit()">Submit</button>
+    
+
+    <h1 style="text-align: center;">Leaderboard</h1>
+    <div style="display:flex; justify-content: center;"?>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Username</th>
+                    <th>Level</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboard">
+                <!-- Leaderboard data will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+
+    <button onclick="logout()">Logout</button>
+</div>
