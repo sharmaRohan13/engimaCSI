@@ -1,4 +1,4 @@
-const serverUrl = 'http://localhost:3000';
+const serverUrl = 'http://172.104.207.22/server';
 
 const questions = [
     'What is the capital of India?',
