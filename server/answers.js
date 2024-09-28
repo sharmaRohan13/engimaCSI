@@ -1,14 +1,14 @@
 const answers = [
-  "New Delhi",
-  "Paris",
-  "Canberra",
-  "Tokyo",
-  "Moscow",
-  "Brasilia",
-  "Pretoria",
-  "Ottawa",
-  "Beijing",
-  "Washington DC",
+  "lakecityquitepills",
+  "polybius",
+  "blackdalia",
+  "thesmilingcat",
+  "rickroll",
+  "britishbroadcastingcorporation",
+  "steveo'rourke",
+  "tennatcompany",
+  "roswellincident",
+  "rennyharlin",
 ];
 
 module.exports = answers;

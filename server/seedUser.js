@@ -1,18 +1,17 @@
 const sqlite3 = require('sqlite3').verbose();
 
 const users = [
-    { username: 'jj00', password: 'test0'},
-    { username: 'jj01', password: 'test1' },
-    { username: 'jj02', password: 'test2' },
-    { username: 'jj03', password: 'test3' },
-    { username: 'jj04', password: 'test4' },
-    { username: 'jj05', password: 'test5' },
-    { username: 'jj06', password: 'test6' },
-    { username: 'jj07', password: 'test7' },
-    { username: 'jj08', password: 'test8' },
-    { username: 'jj09', password: 'test9' },
+    { username: 'team_01', password: "=\\([U" },
+    { username: 'team_02', password: "G(.ZR" },
+    { username: 'team_03', password: "_q'GG" },
+    { username: 'team_04', password: "b(<*d" },
+    { username: 'team_05', password: "Gcb8?" },
+    { username: 'team_06', password: "D9u/&" },
+    { username: 'team_07', password: "^JL3@" },
+    { username: 'team_08', password: "dXD'w" },
+    { username: 'team_09', password: ")3&@3" },
+    { username: 'team_10', password: "XW,<1" },
 ];
-
 
 const db = new sqlite3.Database('./database.db', (err) => {
     if (err) {

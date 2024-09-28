@@ -34,6 +34,8 @@ const db = new sqlite3.Database('./database.db', (err) => {
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
     const query = 'SELECT * FROM users WHERE username = ? AND password = ?';
+
+    console.log(username, password)
     
     db.get(query, [username, password], (err, row) => {
         if (err) {

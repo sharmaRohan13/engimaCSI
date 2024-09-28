@@ -1,16 +1,19 @@
 const serverUrl = 'http://172.104.207.22/server';
+// 'http://localhost:3000';
+//'http://172.104.207.22/server';
 
 const questions = [
-    'What is the capital of India?',
-    'What is the capital of France?',
-    'What is the capital of Australia?',
-    'What is the capital of Japan?',
-    'What is the capital of Russia?',
-    'What is the capital of Brazil?',
-    'What is the capital of South Africa?',
-    'What is the capital of Canada?',
-    'What is the capital of China?',
-    'What is the capital of USA?'
+    "<a href='https://pastebin.com/M9XNTHAf' target='_blank'>Link</a>",
+    "<a href='https://imgur.com/a/wGZ16Ov' target='_blank'>Link</a>",
+    "<a href='https://drive.google.com/file/d/1n86qNxWrIHWsQY9SkHfA7RYzxyX-BzB_/view?usp=drive_link' target='_blank'>Link</a>",
+    "<a href='https://imgur.com/a/bSVswfW' target='_blank'>Link</a>",
+    "<a href='https://imgur.com/a/TOfEqTj' target='_blank'>Link</a>",
+    "<a href='https://imgur.com/a/UIsCvWR' target='_blank'>Link</a>",
+    "<div><a href='https://drive.google.com/file/d/1-UgrzHqKK0mAT8vNsVR8Uuqsej-Dz_sg/view?usp=drive_link' target='_blank'>Link</a><p>In shadows cast by sound and steel,\nTwo silent watchers, cold yet real</p></div>",
+    "<a href='https://imgur.com/a/2AZDrVm' target='_blank'>Link</a>",
+    "<p>\"FBI says, \"\"Yj c mktbz yxatu mwynmi icaa junquo uxepu,\nKpu ycipu ilgbhu mevx icweeqh oycjj.\nXwj ep '47, qjqjdgh cteqr qnqia,\nYypj iaehavi pju sqhhf cwa daxun mdky.\nJdgo sjyorun qv omyau mdgha uuytupu cwa beg\"\" 'de'\"</p>",
+    "<p>56°50'38.6\"N 60°39'15.4\"E</p>",
+    "<p>Completed !!</p>"
 ];
 
 // Dynamically load HTML content
@@ -36,7 +39,7 @@ window.onload = async function() {
         document.getElementById('welcome').innerText = `Welcome ${username} !!`;
         document.getElementById('level').innerText = `Level: ${level}`;
 
-        document.getElementById('question').innerText = questions[level];
+        document.getElementById('question').innerHTML = level > 10 ? questions[10] : questions[level];
         await getUsers();
     } else {
         loadPage('login.html');
